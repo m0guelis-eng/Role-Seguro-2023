@@ -1,0 +1,759 @@
+
+/* Layout
+-----------------------------*/
+html, body, #home {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+  
+
+/* Barra de navegação
+-----------------------------*/
+nav.navbar-transparente {
+  padding: 15px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-toggler {
+    color: purple;
+    border-color: purple;
+}
+
+.logo-header{
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+/*=============== HOME =============*/
+
+#body-index{
+    background: linear-gradient(63.13deg, #1B1464 72.04%, #1F1770 51.05%);
+}
+
+#home{
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+
+#main-home{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+aside{
+    margin: 200px 0 0 0;
+}
+
+
+#body-2 {
+  background: white;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+
+
+  nav{
+  background: #3B0086;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+#logo-header{
+  transform: translateY(-20px);
+  margin-bottom: -12px;
+}
+
+#button-header{
+  width: 15%;
+  height: 50px;
+  transform: translateX(-30px);
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+   text-decoration: none;
+  color: #fff;
+}
+
+.nav-item{
+  text-align: center;
+  height: 30px;
+  width: 30%;
+  margin: 0 auto;
+  padding: 0 15px;
+  color: #F9B3FF;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 1s ease;
+}
+
+.nav-item:hover{
+  box-shadow: 5px 5px #91E5F6;
+  border-radius: 10px;
+  color: #133C55;
+  background-color: #91E5F6;
+}
+
+.nav-item:active{
+  box-shadow: 0px 0px 0px 0px #91E5F6;
+  color: #91E5F6;
+}
+
+
+.logo{
+    float: right;
+    margin-bottom: 40px;
+    width: 450px;
+    animation-name: logo-home;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    transition: 2s ease;
+}
+
+.cards{
+    float: right;
+    margin-right: 20px;
+    width: 90%;
+}
+
+.cards p{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Animações*/
+
+@keyframes spin{
+    0% { transform: rotateY(360deg); }
+    10% { transform: rotateY(360deg); }
+    20% { transform: rotateY(360deg); }
+    30% { transform: rotateY(360deg); }
+    40% { transform: rotateY(360deg); }
+    50% { transform: rotateY(360deg); }
+    60% { transform: rotateY(720deg); }
+    70% { transform: rotateY(720deg); }
+    80% { transform: rotateY(720deg); }
+    90% { transform: rotateY(720deg); }
+    100% { transform: rotateY(720deg); }
+}
+
+@keyframes logo-home{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+  
+}
+
+@media (min-width: 481px) and (max-width: 767.98px) {
+  
+ 
+  nav{
+  background: #3B0086;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+#logo-header{
+  transform: translateY(-20px);
+  margin-bottom: -12px;
+}
+
+#button-header{
+  width: 15%;
+  height: 50px;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+   text-decoration: none;
+  color: #fff;
+}
+
+.nav-item{
+  text-align: center;
+  height: 30px;
+  width: 30%;
+  margin: 0 auto;
+  padding: 0 15px;
+  color: #F9B3FF;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 1s ease;
+}
+
+.nav-item:hover{
+  box-shadow: 5px 5px #91E5F6;
+  border-radius: 10px;
+  color: #133C55;
+  background-color: #91E5F6;
+}
+
+.nav-item:active{
+  box-shadow: 0px 0px 0px 0px #91E5F6;
+  color: #91E5F6;
+}
+
+.logo{
+    float: right;
+    margin-bottom: 40px;
+    width: 450px;
+    animation-name: logo-home;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    transition: 2s ease;
+}
+
+.cards{
+    float: right;
+    margin-right: 30px;
+    width: 90%;
+}
+
+.cards p{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Animações*/
+
+@keyframes spin{
+    0% { transform: rotateY(360deg); }
+    10% { transform: rotateY(360deg); }
+    20% { transform: rotateY(360deg); }
+    30% { transform: rotateY(360deg); }
+    40% { transform: rotateY(360deg); }
+    50% { transform: rotateY(360deg); }
+    60% { transform: rotateY(720deg); }
+    70% { transform: rotateY(720deg); }
+    80% { transform: rotateY(720deg); }
+    90% { transform: rotateY(720deg); }
+    100% { transform: rotateY(720deg); }
+}
+
+@keyframes logo-home{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+  
+  #home{
+    height: 66%;
+  }
+
+  /*navbar*/
+
+nav{
+ background: #3B0086;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+   text-decoration: none;
+  color: #fff;
+}
+
+.nav-item{
+  margin: 0 15px;
+  padding: 0 15px;
+  color: #F9B3FF;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 1s ease;
+}
+
+.nav-item:hover{
+  box-shadow: 5px 5px #91E5F6;
+  border-radius: 10px;
+  color: #133C55;
+  background-color: #91E5F6;
+}
+
+.nav-item:active{
+  box-shadow: 0px 0px 0px 0px #91E5F6;
+  color: #91E5F6;
+}
+  .left{
+    margin: 126px 0 0 0;
+  }
+
+  .gifs-main{
+    background-repeat: no-repeat;
+    height: 32em;
+    width: 32em;
+    animation-duration: 10s;
+    animation-name: gifs-main;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+    float: left;
+    margin-bottom: 0px;
+}
+
+.main-aside{
+    animation-duration: 10s;
+    animation-name: aside;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+.logo{
+    float: right;
+    margin-bottom: 40px;
+    width: 300px;
+    animation-name: logo-home;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    transition: 2s ease;
+}
+
+.cards{
+    float: right;
+    margin-right: 50px;
+    width: 90%;
+}
+
+.cards p{
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+/*Animações*/
+
+@keyframes spin{
+    0% { transform: rotateY(360deg); }
+    10% { transform: rotateY(360deg); }
+    20% { transform: rotateY(360deg); }
+    30% { transform: rotateY(360deg); }
+    40% { transform: rotateY(360deg); }
+    50% { transform: rotateY(360deg); }
+    60% { transform: rotateY(720deg); }
+    70% { transform: rotateY(720deg); }
+    80% { transform: rotateY(720deg); }
+    90% { transform: rotateY(720deg); }
+    100% { transform: rotateY(720deg); }
+}
+
+@keyframes gifs-main{
+    0%{
+        background-image: url(../images/Alex.gif);
+        background-size: 100%;
+        transform: rotateY(180deg);
+    }
+    50%{
+        background-image: url(../images/Alex.gif);
+        background-size: 100%;  
+        transform: rotateY(180deg);
+    }
+    51%{
+        background-image: url(../images/Colle.gif);
+        background-size: 100%;
+        transform: rotateY(180deg);
+        transform: translateX(350px);
+    }
+    100%{
+        background-image: url(../images/Colle.gif);
+        background-size: 100%;
+        transform: rotateY(180deg);
+        transform: translateX(350px);
+    }
+}
+
+@keyframes logo-home{
+    0%{
+        transform: translateY(0px);
+        transform: translateX(-30px);
+    }
+    50%{
+        transform: translateY(10px);
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+        transform: translateX(-30px);
+    }
+}
+
+@keyframes aside{
+    0%{
+        transform: translateX(-30px);
+    }
+    50%{
+        transform: translateX(-30px);
+    }
+    51%{
+        transform: translateX(-450px);
+    }
+    100%{
+        transform: translateX(-450px);
+    }
+}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1579px) {
+
+  /*navbar*/
+
+nav{
+  background: #3B0086;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+   text-decoration: none;
+  color: #fff;
+}
+
+.nav-item{
+  margin: 0 15px;
+  padding: 0 15px;
+  color: #F9B3FF;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 1s ease;
+}
+
+.nav-item:hover{
+  box-shadow: 5px 5px #91E5F6;
+  border-radius: 10px;
+  color: #133C55;
+  background-color: #91E5F6;
+}
+
+.nav-item:active{
+  box-shadow: 0px 0px 0px 0px #91E5F6;
+  color: #91E5F6;
+}
+
+  .left{
+    margin: 126px 0 0 0;
+  }
+
+  .gifs-main{
+    background-repeat: no-repeat;
+    height: 45em;
+    width: 45em;
+    animation-duration: 10s;
+    animation-name: gifs-main;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+    float: left;
+    margin-bottom: -118px;
+}
+
+.main-aside{
+    animation-duration: 10s;
+    animation-name: aside;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+.logo{
+    float: right;
+    margin-bottom: 40px;
+    width: 500px;
+    animation-name: logo-home;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    transition: 2s ease;
+}
+
+.cards{
+    float: right;
+    margin-right: 50px;
+    width: 90%;
+}
+
+.cards p{
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}
+
+/*Animações*/
+
+@keyframes spin{
+    0% { transform: rotateY(360deg); }
+    10% { transform: rotateY(360deg); }
+    20% { transform: rotateY(360deg); }
+    30% { transform: rotateY(360deg); }
+    40% { transform: rotateY(360deg); }
+    50% { transform: rotateY(360deg); }
+    60% { transform: rotateY(720deg); }
+    70% { transform: rotateY(720deg); }
+    80% { transform: rotateY(720deg); }
+    90% { transform: rotateY(720deg); }
+    100% { transform: rotateY(720deg); }
+}
+
+@keyframes gifs-main{
+    0%{
+        background-image: url(../images/Alex.gif);
+        background-size: 100%;
+        transform: rotateY(180deg);
+    }
+    50%{
+        background-image: url(../images/Alex.gif);
+        background-size: 100%;  
+        transform: rotateY(180deg);
+    }
+    51%{
+        background-image: url(../images/Colle.gif);
+        background-size: 100%;
+        transform: rotateY(180deg);
+        transform: translateX(550px);
+    }
+    100%{
+        background-image: url(../images/Colle.gif);
+        background-size: 100%;
+        transform: rotateY(180deg);
+        transform: translateX(550px);
+    }
+}
+
+@keyframes logo-home{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes aside{
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    51%{
+        transform: translateX(-650px);
+    }
+    100%{
+        transform: translateX(-650px);
+    }
+}
+
+}
+
+@media (min-width: 1580px){
+
+  /*navbar*/
+
+nav{
+  background: #3B0086;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+   text-decoration: none;
+  color: #fff;
+}
+
+.nav-item{
+  margin: 0 15px;
+  padding: 0 15px;
+  color: #F9B3FF;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 1s ease;
+}
+
+.nav-item:hover{
+  box-shadow: 5px 5px #91E5F6;
+  border-radius: 10px;
+  color: #133C55;
+  background-color: #91E5F6;
+}
+
+.nav-item:active{
+  box-shadow: 0px 0px 0px 0px #91E5F6;
+  color: #91E5F6;
+}
+
+.left{
+    margin: 126px 0 0 0;
+  }
+
+  .gifs-main{
+    background-repeat: no-repeat;
+    height: 51.2em;
+    width: 51.2em;
+    animation-duration: 10s;
+    animation-name: gifs-main;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+    float: left;
+    margin-bottom: -20px;
+}
+
+.main-aside{
+    animation-duration: 10s;
+    animation-name: aside;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+.logo{
+    float: right;
+    margin-bottom: 40px;
+    width: 700px;
+    animation-name: logo-home;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    transition: 2s ease;
+}
+
+.cards{
+    color: #F9B3FF;
+    text-align: center;
+}
+
+.cards p{
+    color: #F9B3FF;
+    text-align: center;
+}
+
+/*Animações*/
+
+@keyframes spin{
+    0% { transform: rotateY(360deg); }
+    10% { transform: rotateY(360deg); }
+    20% { transform: rotateY(360deg); }
+    30% { transform: rotateY(360deg); }
+    40% { transform: rotateY(360deg); }
+    50% { transform: rotateY(360deg); }
+    60% { transform: rotateY(720deg); }
+    70% { transform: rotateY(720deg); }
+    80% { transform: rotateY(720deg); }
+    90% { transform: rotateY(720deg); }
+    100% { transform: rotateY(720deg); }
+}
+
+@keyframes gifs-main{
+    0%{
+        background-image: url(../images/Alex.gif);
+        background-size: 100%;
+        transform: rotateY(180deg);
+    }
+    50%{
+        background-image: url(../images/Alex.gif);
+        background-size: 100%;  
+        transform: rotateY(180deg);
+    }
+    51%{
+        background-image: url(../images/Colle.gif);
+        background-size: 100%;
+        transform: rotateY(180deg);
+        transform: translateX(800px);
+    }
+    100%{
+        background-image: url(../images/Colle.gif);
+        background-size: 100%;
+        transform: rotateY(180deg);
+        transform: translateX(800px);
+    }
+}
+
+@keyframes logo-home{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes aside{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    51%{
+        transform: translateX(-700px);
+    }
+    100%{
+        transform: translateX(-700px);
+    }
+}
+}
